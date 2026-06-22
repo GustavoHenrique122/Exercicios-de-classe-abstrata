@@ -1,0 +1,22 @@
+
+public class ContaPoupanca extends Contas {
+	
+	private double taxa;
+
+	public ContaPoupanca(double saldo, double taxa) {
+		super(saldo);
+		
+		this.taxa = saldo * 0.3;
+		
+		this.taxa = taxa;
+	}
+
+	public double getTaxa() {
+		return taxa;
+	}
+
+	public void setTaxa(double taxa) {
+		this.taxa = taxa;
+	}	
+
+}

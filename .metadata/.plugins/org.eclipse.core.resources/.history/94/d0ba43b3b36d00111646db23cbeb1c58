@@ -1,0 +1,28 @@
+
+public class BoletoBancario extends Pagamento{
+	
+	private String cod; 
+	
+	public void processar(double preco, double saldo) {
+		
+		saldo =- preco;
+		
+		for (int i = 0; i < 5; i++) {
+            this.cod += Math.random() * 10;
+        }
+		
+		System.out.println("===== BOLETO =====");
+        System.out.println("Valor: R$ " + preco);
+        System.out.println("Código: " + this.cod);
+        System.out.println("==================");
+	}
+
+	public String getCod() {
+		return cod;
+	}
+
+	public void setCod(String cod) {
+		this.cod = cod;
+	}
+
+}
